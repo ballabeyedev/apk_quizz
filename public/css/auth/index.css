@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('/image/bcs.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover; /* Pour que l'image couvre tout l'écran */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.textbox input:focus {
+    border-bottom-color: #0066cc;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 300px;
+    }
+}
+
+.error-message{
+    color: red;
+}
+
+.register-link {
+    text-align: center; /* Centre le texte */
+    margin-top: 20px; /* Marge supérieure pour espacer */
+    font-size: 16px; /* Taille de police */
+    color: #333; /* Couleur du texte */
+}
+
+.register-link a {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    font-weight: bold; /* Rend le lien en gras */
+    transition: color 0.3s; /* Effet de transition pour la couleur */
+}
+
+.register-link a:hover {
+    color: #0056b3; /* Couleur du lien au survol */
+    text-decoration: underline; /* Souligne le lien au survol */
+}
+
